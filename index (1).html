@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Our Partnership Proposal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: a letter-like proposal in one column. Opening note, who does what, what the investment covers, each business, flexible options for property and law, then next steps. */
+:root{
+  --bg:#F2F4F3;
+  --paper:#FFFFFF;
+  --ink:#17201D;
+  --muted:#56625D;
+  --line:#D7DEDA;
+  --accent:#1F5A4C;
+  --accent-soft:#E2EEEA;
+  --warm:#9A5B1E;
+  --warm-soft:#F7EDE1;
+  --display:"Newsreader", Georgia, "Times New Roman", serif;
+  --body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1513; --paper:#161E1B; --ink:#E6ECE9; --muted:#9FAEA8; --line:#2A3531;
+    --accent:#7CC5B1; --accent-soft:#1A2B26; --warm:#E3AE73; --warm-soft:#2D2219;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1513; --paper:#161E1B; --ink:#E6ECE9; --muted:#9FAEA8; --line:#2A3531;
+  --accent:#7CC5B1; --accent-soft:#1A2B26; --warm:#E3AE73; --warm-soft:#2D2219;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:820px;margin:0 auto;padding-inline:20px;padding-block:32px 72px}
+
+h1,h2,h3{font-family:var(--display);font-weight:600;text-wrap:balance;letter-spacing:-.005em;margin:0}
+h1{font-size:clamp(32px,5.4vw,46px);line-height:1.08}
+h2{font-size:clamp(24px,3.6vw,30px);line-height:1.15}
+h3{font-size:20px;line-height:1.25}
+p{margin:0}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+
+/* opening */
+.opening{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:34px 32px;display:grid;gap:18px}
+.opening .letter{display:grid;gap:12px;max-width:62ch;font-size:16.5px}
+.opening .sign{font-family:var(--display);font-style:italic;font-size:18px;color:var(--accent)}
+
+section{margin-top:56px;display:grid;gap:18px}
+.head{display:grid;gap:8px}
+.head p{max-width:64ch;color:var(--muted)}
+
+/* roles */
+.roles-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.side{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:22px;display:grid;gap:12px;align-content:start;min-width:0}
+.side.ours{border:2px solid var(--accent)}
+.side ul{margin:0;padding-left:20px;display:grid;gap:6px;font-size:15px}
+.reward{background:var(--accent);color:var(--paper);border-radius:10px;padding:18px 22px;font-size:16px}
+.reward strong{font-family:var(--display);font-size:19px;font-weight:600;display:block;margin-bottom:2px}
+
+/* investment */
+.invest{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:20px 22px;display:grid;gap:12px;align-content:start;min-width:0}
+.panel ul{margin:0;padding-left:20px;display:grid;gap:6px;font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--accent-soft);color:var(--accent);font-weight:600;font-size:14px;padding:6px 12px;border-radius:20px}
+.aside{font-size:14px;color:var(--muted)}
+
+/* business blocks */
+.biz{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:24px;display:grid;gap:14px}
+.biz-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.tag{font-size:13px;font-weight:600;padding:4px 11px;border-radius:20px;background:var(--accent-soft);color:var(--accent)}
+.tag.open{background:var(--warm-soft);color:var(--warm)}
+.biz p{max-width:64ch}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px}
+.flow span.step{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 12px;font-weight:500}
+.flow span.arr{color:var(--muted)}
+
+/* options */
+.choice{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.opt{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:22px;display:grid;gap:12px;align-content:start;min-width:0}
+.opt .eyebrow{color:var(--warm)}
+.opt dl{margin:0;display:grid;gap:10px}
+.opt dt{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.opt dd{margin:2px 0 0;font-size:15px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;min-width:600px;font-size:14.5px}
+caption{text-align:left;font-family:var(--display);font-weight:600;font-size:20px;padding:18px 18px 10px}
+th,td{text-align:left;padding:11px 16px;border-top:1px solid var(--line);vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--bg)}
+td:first-child{font-weight:600}
+.recommended{background:var(--paper);border:2px solid var(--accent);border-radius:12px;padding:26px;display:grid;gap:16px}
+.rec-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.rec-badge{background:var(--accent);color:var(--paper);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:20px}
+.recommended h3{font-size:24px}
+.recommended h4{font-family:var(--display);font-size:18px;font-weight:600;margin:0}
+.rec-parts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rec-parts > div{background:var(--accent-soft);border-radius:8px;padding:16px 18px;display:grid;gap:6px;align-content:start;min-width:0}
+.rec-parts p{font-size:15px}
+.part-label{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.transparent{border-top:1px solid var(--line);padding-top:14px;display:grid;gap:8px}
+.transparent ul{margin:0;padding-left:20px;display:grid;gap:5px;font-size:15px}
+.others-intro{color:var(--muted);margin-top:6px}
+.rec-row td{background:var(--accent-soft)}
+.mini-badge{display:inline-block;margin-left:6px;background:var(--accent);color:var(--paper);font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:10px;vertical-align:middle}
+@media (max-width:680px){.rec-parts{grid-template-columns:1fr}.recommended{padding:20px 18px}}
+.ask{background:var(--warm-soft);border-radius:10px;padding:20px 22px;display:grid;gap:10px}
+.ask h3{color:var(--warm)}
+.ask ul{margin:0;padding-left:20px;display:grid;gap:6px}
+
+/* why */
+.why{background:var(--accent);color:var(--paper);border-radius:10px;padding:30px;display:grid;gap:12px}
+.why h2{color:var(--paper)}
+.why p{max-width:62ch;opacity:.92}
+
+/* next */
+.next{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--line)}
+.next li{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.next .n{font-family:var(--display);font-size:22px;color:var(--accent);line-height:1.2}
+
+@media (max-width:680px){
+  .roles-grid,.invest,.choice{grid-template-columns:1fr}
+  .opening{padding:26px 20px}
+  .biz,.opt,.panel,.side{padding:20px 18px}
+  .why{padding:24px 20px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="opening">
+    <span class="eyebrow">A proposal to work together</span>
+    <h1>Let's grow your businesses together, as partners.</h1>
+    <div class="letter">
+      <p>We've thought carefully about how we can work together on your businesses, and we'd like to do it as partners.</p>
+      <p>You own the companies, bring the clients and lead the commercial side. We build and run the operation behind them here: the office, the people and the day-to-day work. Our reward comes from the growth we create together, so both of us are working toward the same result.</p>
+      <p>This page sets out how we see it working. It's a starting point for us to sit down and shape it together.</p>
+    </div>
+    <p class="sign">Faizan</p>
+  </header>
+
+  <section id="roles">
+    <div class="head">
+      <span class="eyebrow">How the partnership works</span>
+      <h2>Who does what</h2>
+    </div>
+    <div class="roles-grid">
+      <div class="side">
+        <h3>You</h3>
+        <ul>
+          <li>Own the companies and the client relationships</li>
+          <li>Bring in the clients and the work</li>
+          <li>Receive the revenue into your companies</li>
+          <li>Carry the commercial and legal side of the business</li>
+          <li>Invest in the office and the team here</li>
+        </ul>
+      </div>
+      <div class="side ours">
+        <h3>Us</h3>
+        <ul>
+          <li>Run your office here day to day</li>
+          <li>Hire a new team for your businesses, then train and manage it</li>
+          <li>Deliver the work and run the operations</li>
+          <li>Keep quality, deadlines and reporting on track</li>
+          <li>Build the systems that let the businesses scale</li>
+        </ul>
+      </div>
+    </div>
+    <div class="reward"><strong>We share in the profit</strong>Instead of a fixed fee, we earn a share of the profit from the businesses we run. When they grow, we grow.</div>
+  </section>
+
+  <section id="invest">
+    <div class="head">
+      <span class="eyebrow">What the investment covers</span>
+      <h2>A bigger office and a new, dedicated team</h2>
+      <p>We'll hire a completely new team for your businesses. To do that properly, the right resources need to be in place from day one. These are the things we'd set up together.</p>
+    </div>
+    <div class="invest">
+      <div class="panel">
+        <h3>The office</h3>
+        <ul>
+          <li>A larger space to seat the new team</li>
+          <li>Office rent</li>
+          <li>Day-to-day running costs and the small things a team needs</li>
+          <li>Occasional team activities that keep people motivated</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>The new team</h3>
+        <div class="chips">
+          <span>Project manager</span>
+          <span>Developer</span>
+          <span>Ecommerce specialist</span>
+          <span>Ads and digital marketing specialist</span>
+          <span>SEO specialist</span>
+        </div>
+        <p class="aside">The project manager keeps every task, deadline and handover on track across all the businesses, so nothing is missed or delivered late.</p>
+        <p class="aside">Every person is a new hire, recruited specifically for your businesses and working only on them. We recruit them, manage them and answer for their results.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="businesses">
+    <div class="head">
+      <span class="eyebrow">Business by business</span>
+      <h2>How we'd work on each one</h2>
+      <p>Ecommerce and IT work the same way, with a share of profit. Property and law run differently, so for those we'd like to agree an approach with you.</p>
+    </div>
+
+    <article class="biz">
+      <div class="biz-top"><h3>Ecommerce</h3><span class="tag">Share of net profit</span></div>
+      <p>We run the operation: the store, products, ads, content, customer service and reporting. The numbers are open to both of us at any time. After the business covers its costs, we share the profit that's left.</p>
+    </article>
+
+    <article class="biz">
+      <div class="biz-top"><h3>IT services</h3><span class="tag">Share of net profit</span></div>
+      <p>Your UK company is the face of the IT business. Clients sign with your company and pay your company, so the contracts, the client relationships and the commercial risk all sit with you. Your office here does the work, and we run that office and its team. After costs, we share the profit.</p>
+      <div class="flow" aria-label="How the IT business runs">
+        <span class="step">Client</span><span class="arr">→</span>
+        <span class="step">Your UK company</span><span class="arr">→</span>
+        <span class="step">Your office here delivers</span><span class="arr">→</span>
+        <span class="step">Profit shared</span>
+      </div>
+    </article>
+
+    <article class="biz">
+      <div class="biz-top"><h3>Property and law firm</h3><span class="tag open">Your choice</span></div>
+      <p>The new team will support both businesses as well. These two work differently from ecommerce and IT, so we've set out the model we recommend and a few alternatives. You can choose a different one for each business, or adjust as the partnership grows.</p>
+    </article>
+
+    <div class="recommended">
+      <div class="rec-top">
+        <span class="rec-badge">Recommended</span>
+        <span class="eyebrow">What we prefer</span>
+      </div>
+      <h3>A management fee plus a share of the profit</h3>
+      <p>This is the model we'd most like to work with on property and the law firm. It has two parts.</p>
+      <div class="rec-parts">
+        <div>
+          <span class="part-label">Part one</span>
+          <h4>A smaller monthly management fee</h4>
+          <p>This covers our management only: running the operation, leading the team, planning the work and reporting to you. It is not for the team. The team's salaries are part of your investment in the office and are covered separately.</p>
+        </div>
+        <div>
+          <span class="part-label">Part two</span>
+          <h4>A share of the profit as our reward</h4>
+          <p>On top of the management fee, we take a share of the profit the business makes. This is our reward for growing it, so we only earn more when you do.</p>
+        </div>
+      </div>
+      <div class="transparent">
+        <h4>Fully transparent, on both sides</h4>
+        <ul>
+          <li>You see exactly what the management fee covers, and the team costs are shown separately.</li>
+          <li>We agree together, in writing, what counts as profit before anything is shared.</li>
+          <li>Both of us see the same numbers, every month.</li>
+        </ul>
+      </div>
+      <p class="aside">Why we prefer it: the fee keeps the management steady through quieter months, and the profit share keeps us focused on growth. Neither side carries all the risk.</p>
+    </div>
+
+    <p class="others-intro">If you'd rather work another way, we're open to these as well:</p>
+
+    <div class="choice">
+      <div class="opt">
+        <span class="eyebrow">Other option</span>
+        <h3>Profit share only</h3>
+        <dl>
+          <div><dt>How it works</dt><dd>No management fee. We share in the profit the business makes, the same way as ecommerce and IT.</dd></div>
+          <div><dt>What it needs</dt><dd>Open numbers on both sides, and an agreed view of what counts as profit.</dd></div>
+        </dl>
+      </div>
+      <div class="opt">
+        <span class="eyebrow">Other option</span>
+        <h3>Management fee only</h3>
+        <dl>
+          <div><dt>How it works</dt><dd>A set monthly fee for managing the operation, with no profit share.</dd></div>
+          <div><dt>What you keep</dt><dd>All of the business's profit stays with you.</dd></div>
+        </dl>
+      </div>
+      <div class="opt">
+        <span class="eyebrow">Other option</span>
+        <h3>Share per deal or new client</h3>
+        <dl>
+          <div><dt>How it works</dt><dd>We earn each time a property sale completes, or each time the firm takes on a new client.</dd></div>
+          <div><dt>What you get</dt><dd>Our reward is tied to clear, countable results.</dd></div>
+        </dl>
+      </div>
+      <div class="opt">
+        <span class="eyebrow">Other option</span>
+        <h3>Partner on specific projects</h3>
+        <dl>
+          <div><dt>How it works</dt><dd>We share in the results of particular projects we run together, such as a property we take to sale or a new service line for the firm.</dd></div>
+          <div><dt>What you get</dt><dd>The rest of the business stays entirely yours.</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <caption>How the options compare</caption>
+        <thead><tr><th>Option</th><th>Fixed monthly cost</th><th>How tied we are to results</th><th>How simple it is</th></tr></thead>
+        <tbody>
+          <tr class="rec-row"><td>Management fee + profit share <span class="mini-badge">Recommended</span></td><td>Smaller, for management only</td><td>Strongly</td><td>Simple, with open numbers</td></tr>
+          <tr><td>Profit share only</td><td>None</td><td>Fully</td><td>Needs open numbers</td></tr>
+          <tr><td>Management fee only</td><td>Yes</td><td>Lightly</td><td>Very simple</td></tr>
+          <tr><td>Per deal or new client</td><td>None</td><td>Strongly</td><td>Simple</td></tr>
+          <tr><td>Specific projects</td><td>None</td><td>Fully, on those projects</td><td>Moderate</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="ask">
+      <h3>What we'd like to hear from you</h3>
+      <ul>
+        <li>Does our recommended model, a management fee plus a profit share, work for you on property?</li>
+        <li>And on the law firm?</li>
+        <li>If not, which of the other options feels closer to how you'd like to work?</li>
+      </ul>
+      <p class="aside">Whichever you choose, we'll set it up properly with your solicitor so it fits the rules each business works under.</p>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="why">
+      <h2>Why clarity matters to us</h2>
+      <p>We'll be building and leading a new team for your businesses and putting our own time and attention into running them. Being clear from the start about how we share in the outcome is what lets us commit fully and build for the long term.</p>
+      <p>We're not looking for a short-term arrangement. We want to grow these businesses with you, and grow alongside them.</p>
+    </div>
+  </section>
+
+  <section id="next">
+    <div class="head">
+      <span class="eyebrow">Next steps</span>
+      <h2>Where we go from here</h2>
+    </div>
+    <ol class="next">
+      <li><span class="n">1</span><span>We sit down together and talk through this page.</span></li>
+      <li><span class="n">2</span><span>You tell us how you'd like to work on property and the law firm.</span></li>
+      <li><span class="n">3</span><span>We agree the details together and put them in writing.</span></li>
+      <li><span class="n">4</span><span>We expand the office, hire the new team and get to work.</span></li>
+    </ol>
+  </section>
+
+</div>
+</body>
+</html>
